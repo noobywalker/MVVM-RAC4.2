@@ -10,4 +10,30 @@ import UIKit
 
 class RWTSearchResultsViewController: UITableViewController {
 
+	var viewModel: RWTSearchResultsViewModel! {
+		didSet {
+			self.bindViewModel()
+
+		}
+	}
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+	}
+
+	func bindViewModel() {
+		self.title = viewModel.title
+	}
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewModel.searchResults.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! RWTSearchResultsTableViewCell
+//        cell.viewModel = viewModel.searchResults[indexPath.row]
+        
+        return cell
+    }
 }

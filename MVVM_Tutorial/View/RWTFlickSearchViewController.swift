@@ -21,7 +21,7 @@ class RWTFlickSearchViewController: UIViewController, UITableViewDelegate, UITab
 	}
 
 	override func viewDidLoad() {
-		self.viewModel = RWTFlickrSearchViewModel(services: RWTViewModelServicesImpl())
+		self.viewModel = RWTFlickrSearchViewModel(services: RWTViewModelServicesImpl(navigationController: self.navigationController))
 	}
 
 	func bindViewModel() {

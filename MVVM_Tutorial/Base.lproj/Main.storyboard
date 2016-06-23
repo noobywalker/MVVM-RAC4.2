@@ -137,7 +137,7 @@
         <!--Search Results View Controller-->
         <scene sceneID="qXS-NP-46O">
             <objects>
-                <tableViewController id="ufj-kC-LjO" customClass="RWTSearchResultsViewController" customModule="MVVM_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RWTSearchResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ufj-kC-LjO" customClass="RWTSearchResultsViewController" customModule="MVVM_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="206" sectionHeaderHeight="28" sectionFooterHeight="28" id="zMY-nD-AYk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

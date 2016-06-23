@@ -11,5 +11,5 @@ import Foundation
 protocol RWTViewModelServices {
     
     func getFlickrSearchService() -> RWTFlickrSearch
-    
+    func pushViewModel(viewModel:AnyObject)
 }

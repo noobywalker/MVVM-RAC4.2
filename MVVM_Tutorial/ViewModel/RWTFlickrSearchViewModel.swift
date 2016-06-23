@@ -18,7 +18,7 @@ class RWTFlickrSearchViewModel: NSObject {
 
 	init(services: RWTViewModelServices) {
 		super.init()
-        self.services = services
+		self.services = services
 		self.searchText = "search text"
 		self.title = "Flickr Search"
 
@@ -39,6 +39,11 @@ class RWTFlickrSearchViewModel: NSObject {
 	}
 
 	func executeSearchSignal() -> RACSignal {
-		return self.services.getFlickrSearchService().flickrSearchSignal(self.searchText)
+        return self.services.getFlickrSearchService().flickrSearchSignal(self.searchText)
+            .doNext { result in
+            let results = result as! RWTFlickrSearchResults
+            let resultsViewModel = RWTSearchResultsViewModel(result: results)
+            self.services.pushViewModel(resultsViewModel)
+        }
 	}
 }

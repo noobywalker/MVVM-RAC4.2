@@ -33,6 +33,7 @@
 		C2C632711D1AE2F300CD2C79 /* RWTFlickrSearchImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C632701D1AE2F300CD2C79 /* RWTFlickrSearchImpl.swift */; };
 		C2C632731D1AE67100CD2C79 /* RWTFlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C632721D1AE67100CD2C79 /* RWTFlickrPhoto.swift */; };
 		C2C632751D1AE6E900CD2C79 /* RWTFlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C632741D1AE6E900CD2C79 /* RWTFlickrSearchResults.swift */; };
+		C2C632771D1C15F200CD2C79 /* RWTSearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C632761D1C15F200CD2C79 /* RWTSearchResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		C2C632701D1AE2F300CD2C79 /* RWTFlickrSearchImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RWTFlickrSearchImpl.swift; path = Model/RWTFlickrSearchImpl.swift; sourceTree = "<group>"; };
 		C2C632721D1AE67100CD2C79 /* RWTFlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RWTFlickrPhoto.swift; path = Model/RWTFlickrPhoto.swift; sourceTree = "<group>"; };
 		C2C632741D1AE6E900CD2C79 /* RWTFlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RWTFlickrSearchResults.swift; path = Model/RWTFlickrSearchResults.swift; sourceTree = "<group>"; };
+		C2C632761D1C15F200CD2C79 /* RWTSearchResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RWTSearchResultsViewModel.swift; path = ViewModel/RWTSearchResultsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				C2C632601D1ABCB400CD2C79 /* RWTFlickrSearchViewModel.swift */,
+				C2C632761D1C15F200CD2C79 /* RWTSearchResultsViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				C2C632231D1AB3CF00CD2C79 /* ViewController.swift in Sources */,
 				C2C632211D1AB3CF00CD2C79 /* AppDelegate.swift in Sources */,
 				C2C632711D1AE2F300CD2C79 /* RWTFlickrSearchImpl.swift in Sources */,
+				C2C632771D1C15F200CD2C79 /* RWTSearchResultsViewModel.swift in Sources */,
 				C2C6325D1D1AB78800CD2C79 /* RWTSearchResultsViewController.swift in Sources */,
 				C2C6326F1D1AE20400CD2C79 /* RWTViewModelServicesImpl.swift in Sources */,
 				C2C632751D1AE6E900CD2C79 /* RWTFlickrSearchResults.swift in Sources */,
