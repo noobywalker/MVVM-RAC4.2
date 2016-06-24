@@ -30,7 +30,3 @@ infix operator ~> {}
 func ~> (signal: RACSignal, rac: RAC) {
   rac.assignSignal(signal)
 }
-
-
-public enum NoError: ErrorType {
-}

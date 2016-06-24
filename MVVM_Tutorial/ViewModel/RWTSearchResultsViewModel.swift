@@ -9,13 +9,14 @@
 import Foundation
 
 class RWTSearchResultsViewModel: NSObject {
-    
+
 	var title: String!
-	var searchResults: [RWTFlickrPhoto]!
-    
-    init(result:RWTFlickrSearchResults) {
-        super.init()
-        self.searchResults = result.photos
-        self.title = result.searchString
-    }
+	var searchResults: [RWTSearchResultsItemViewModel]
+
+	init(result: RWTFlickrSearchResults) {
+
+		self.searchResults = result.photos.map { RWTSearchResultsItemViewModel(photo: $0) }
+		self.title = result.searchString
+		super.init()
+	}
 }
